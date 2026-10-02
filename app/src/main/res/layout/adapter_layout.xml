@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/minimum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="300dp"
+        android:fontFamily="sans-serif-black"
+        android:textSize="20dp"
+        android:text="Minimum" />
+
+    <TextView
+        android:id="@+id/maximum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/minimum"
+        android:layout_marginLeft="300dp"
+        android:fontFamily="sans-serif-black"
+        android:textSize="20dp"
+        android:text="Maximum" />
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Date" />
+
+    <ImageView
+        android:id="@+id/imageViewAdapter"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:focusable="false"
+        />
+
+
+    <TextView
+        android:id="@+id/weatherCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="175dp"
+        android:focusable="false"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:text="condition "
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

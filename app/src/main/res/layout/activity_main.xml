@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cpaper"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/zipCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Enter ID"
+        />
+
+    <TextView
+        android:id="@+id/lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="145dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginLeft="50dp"
+         />
+
+    <TextView
+        android:id="@+id/lon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lat"
+        android:layout_marginTop="145dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginLeft="20dp"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/zipCode"
+        android:text="Search" />
+
+    <TextView
+        android:id="@+id/quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="18dp"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:text="Enter Zip Code!"
+        />
+
+    <TextView
+        android:id="@+id/Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/quote"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="60dp"
+         />
+
+
+    <TextView
+        android:id="@+id/CurrentTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/quote"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        />
+
+    <ListView
+        android:id="@+id/customListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/CurrentTemp"
+        tools:listitem="@layout/adapter_layout"
+        />
+
+
+
+
+</RelativeLayout>
