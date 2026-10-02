@@ -1,6 +1,16 @@
 # Weather App
 
-An Android app that shows the weather forecast for a ZIP code, using the [OpenWeather API](https://openweathermap.org/api). The background changes with the weather.
+A Demon Slayer themed weather app for Android. Enter a ZIP code to get the forecast, and the character on screen changes with the weather:
+
+| Weather | Character |
+| --- | --- |
+| Clear | Shinobu |
+| Sunny | Zenitsu |
+| Cloudy | Nezuko |
+| Rain | Giyu |
+| Snow | Tanjiro |
+
+Weather data comes from the [OpenWeather API](https://openweathermap.org/api).
 
 ## Setup
 
